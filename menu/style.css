@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f5f0;
+    color: #222;
+}
+
+
+/* HEADER */
+
+.header {
+    background: #1d1d1d;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+.logo p {
+    color: #d4af37;
+    letter-spacing: 6px;
+    margin-top: 5px;
+}
+
+.welcome {
+    margin-top: 20px;
+    color: #ddd;
+}
+
+
+/* MENU */
+
+.menu {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+
+/* CATEGORY */
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    font-size: 25px;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* DISH */
+
+.dish {
+    display: flex;
+    gap: 15px;
+    background: white;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.dish img {
+    width: 110px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.dish-info {
+    flex: 1;
+}
+
+
+.dish-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.dish-title h3 {
+    font-size: 18px;
+}
+
+
+.dish-title span {
+    color: #b28a00;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.dish-info p {
+    margin-top: 8px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* SIMPLE ITEMS */
+
+.simple-item {
+    display: flex;
+    justify-content: space-between;
+
+    background: white;
+
+    padding: 15px 18px;
+
+    margin-bottom: 8px;
+
+    border-radius: 8px;
+}
+
+.simple-item strong {
+    color: #b28a00;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: #1d1d1d;
+    color: white;
+    padding: 30px 20px;
+}
+
+footer h3 {
+    color: #d4af37;
+    margin-bottom: 8px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .menu {
+        width: 94%;
+    }
+
+    .dish {
+        padding: 10px;
+    }
+
+    .dish img {
+        width: 90px;
+        height: 85px;
+    }
+
+    .dish-title h3 {
+        font-size: 16px;
+    }
+
+    .dish-info p {
+        font-size: 13px;
+    }
+
+    .category h2 {
+        font-size: 22px;
+    }
+}
